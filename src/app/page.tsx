@@ -102,9 +102,9 @@ export default function Home() {
                                 </Tooltip>
                             </Reveal>
                         </TooltipProvider>
-
-
-                        <Button className="ml-10 cursor-pointer bg-yellow-500">Resume</Button>
+                        <a href="https://drive.google.com/file/d/1ePvQfWglcnfxSSsVHB5D5qiUT4qFG4ai/view?usp=drive_link">
+                            <Button className="ml-10 cursor-pointer bg-yellow-500">Resume</Button>
+                        </a>
                     </div>
                 </div>
                 <div className="flex relative w-full h-full rounded-xl ">
