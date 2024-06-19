@@ -21,7 +21,7 @@
         "title": "NEXT-COMMERCE",
         "description": "Developed a Full-Stack E-commerce platform with the help of NextJS, Typescript, ShadCn UI and Sanity.io. An CMS where we can store our products and integrated Stripe for managing Payment gateways",
         "type": "Personal Projects",
-        "imageUrl": "/assets/img/shop.png",
+        "imageUrl": "/assets/img/Shop.png",
         "githubUrl": "https://github.com/vineet-op/Next_Commerce",
         "demoUrl": "https://next-commerce-pro1.vercel.app/",
         "skills": [
