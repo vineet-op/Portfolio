@@ -1,0 +1,77 @@
+[
+    {
+        "title": "INSIGHTS",
+        "description": "Developed a FullStack Blog application by integrating ReactJS, TailwindCSS and Appwrite for Backend as a service (BAAS) where Users can Login and Post, Edit, Read, Delete the Blogs",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/blog.png",
+        "githubUrl": "https://github.com/vineet-op/Appwite-Blog",
+        "demoUrl": "https://insights7.netlify.app/",
+        "skills": [
+            "HTML",
+            "TAILWIND",
+            "JAVASCRIPT",
+            "REACT.JS",
+            "APPWRITE",
+            "FORMIK",
+            "REDUX TOOLKIT",
+            "NETLIFY"
+        ]
+    },
+    {
+        "title": "NEXT-COMMERCE",
+        "description": "Developed a Full-Stack E-commerce platform with the help of NextJS, Typescript, ShadCn UI and Sanity.io. An CMS where we can store our products and integrated Stripe for managing Payment gateways",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/shop.png",
+        "githubUrl": "https://github.com/vineet-op/Next_Commerce",
+        "demoUrl": "https://next-commerce-pro1.vercel.app/",
+        "skills": [
+            "NEXT.JS",
+            "TYPESCRIPT",
+            "SHADCN UI",
+            "SANITY.IO",
+            "STRIPE",
+            "VERCEL"
+        ]
+    },
+    {
+        "title": "Crypto-Arena",
+        "description": "Developed the Crypto WebApp where user can access all the information related to crypto-currecies and coins, and one can see the live Chart according to the time period",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/crypto.png",
+        "githubUrl": "https://github.com/vineet-op/Crypto_Arena",
+        "demoUrl": "https://crypto-arenaa.vercel.app/",
+        "skills": [
+            "REACT.JS",
+            "CHAKRA UI",
+            "REDUX TOOLKIT",
+            "COINGEKO API",
+            "NETLIFY"
+        ]
+    },
+    {
+        "title": "PAY-ZAPP",
+        "description": "Built a Payments like App where users can Send and Transfer Dummy Money. Developed secure user Authentication using JWTtoken, NodeJS and ExpressJS.Optimized user Transactions with Efficient data storage and retrieval using MongoDB.Designed intuitive UI Shadcn for app promoting user-friendly money transfer",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/money.png",
+        "githubUrl": "https://github.com/vineet-op/Paytm-main",
+        "demoUrl": "",
+        "skills": [
+            "REACT.JS",
+            "NODE.JS",
+            "EXPRESS.JS",
+            "MONGODB",
+            "SHADCN UI",
+            "JWT AUTH",
+            "VERCEL"
+        ]
+    },
+    {
+        "title": "SPOTIFY LITE",
+        "description": "This is a Spotify Clone made using HTML, CSS, and JavaScript. The purpose of this project is to replicate some of the features and functionalities of the popular music streaming service, Spotify",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/spotify.png",
+        "githubUrl": "https://github.com/vineet-op/SpotifyClone",
+        "demoUrl": "https://github.com/vineet-op/SpotifyClone",
+        "skills": ["HTML", "CSS", "JAVASCRIPT"]
+    }
+]
