@@ -2,15 +2,15 @@
     {
         "title": "Full-Stack Developer",
         "company": "Numentry Technologies",
-        "date": "February 2024 - Present",
-        "description": "Recently joined the company as a Software Developer Intern. I am responsible for developing and maintaining software applications for internal use. I work closely with the product owner and other team members to deliver high-quality software solutions.",
+        "date": "February 2024 - June 2024",
+        "description": "• Developed a REST API using Node.js, Express.js, and MongoDB for a user management system.\n• Designed a user interface using React.js and Shadcn UI library, increasing user engagement by 5%.\n• Integrated the state management library Recoil.js for efficient state management.\n• Explored ways to visualize projects using Git and GitHub workflow.",
         "skills": [
-            "NodeJs",
-            "ExpressJs",
+            "Node.js",
+            "Express.js",
             "JavaScript",
             "TypeScript",
-            "ReactJs",
-            "Tailwind"
+            "React.js",
+            "Tailwind CSS"
         ]
     }
 ]
