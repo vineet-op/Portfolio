@@ -128,7 +128,7 @@ export default function Home() {
                     whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 >
                     <p className="leading-7">
-                        I build dynamic, user-centric web applications using modern technologies like React,Next.js ,Node.js, and MongoDB. My expertise covers both front-end and back-end development, ensuring seamless integration and functionality. I deliver robust, scalable solutions tailored to each project's unique needs
+                        I build dynamic, user-centric web applications using modern technologies like React.Js, Next.js ,Node.js, and MongoDB. My expertise covers both front-end and back-end development, ensuring seamless integration and functionality. I deliver robust, scalable solutions tailored to each project's unique needs
                         <br />
                         <br />
                         Presently, my primary focus revolves around mastering the art of building high-quality and scalable software applications, continuously refining my skills in both frontend and backend development. As the saying goes, <em>"Once you go fullstack, you never go back"</em>.
