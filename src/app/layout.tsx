@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { NavigationBar } from '@/components/nav-bar'
-import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GeistSans } from "geist/font/sans";
@@ -31,11 +30,9 @@ export default function RootLayout({
                         {children}
                     </main>
                     <footer className="container mx-auto py-4">
-                        <Link href="https://github.com/KeluhingBavui/portfolio-v2" target="_blank">
-                            <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
-                                © Designed & Built by Vineet Jadhav · 2024
-                            </p>
-                        </Link>
+                        <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
+                            © Designed & Built by Vineet Jadhav · 2024
+                        </p>
                     </footer>
                 </ThemeProvider>
                 <Analytics />

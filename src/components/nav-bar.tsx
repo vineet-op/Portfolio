@@ -17,7 +17,7 @@ export function NavigationBar() {
                 <Link href="/" passHref>
                     <Avatar className="cursor-pointer">
                         <AvatarImage src="https://github.com/KeluhingBavui.png" alt="@KeluhingBavui" />
-                        <AvatarFallback>DW</AvatarFallback>
+                        <AvatarFallback>VJ</AvatarFallback>
                     </Avatar>
                 </Link>
                 <NavigationMenuList className="w-full justify-end">

@@ -102,7 +102,7 @@ export default function Home() {
                                 </Tooltip>
                             </Reveal>
                         </TooltipProvider>
-                        <a href="https://drive.google.com/file/d/1SfPVevDjkZkfiAxcur0VU_dW7_8iHQa-/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/1KZQO3V_7mZUU5Dvoipft6Knqo4rkhm1Q/view?usp=sharing">
                             <Button className="ml-10 cursor-pointer bg-yellow-500">Resume</Button>
                         </a>
                     </div>
@@ -130,7 +130,6 @@ export default function Home() {
                     <p className="leading-7">
                         I build dynamic, user-centric web applications using modern technologies like React,Next.js ,Node.js, and MongoDB. My expertise covers both front-end and back-end development, ensuring seamless integration and functionality. I deliver robust, scalable solutions tailored to each project's unique needs
                         <br />
-
                         <br />
                         Presently, my primary focus revolves around mastering the art of building high-quality and scalable software applications, continuously refining my skills in both frontend and backend development. As the saying goes, <em>"Once you go fullstack, you never go back"</em>.
                         <br />
