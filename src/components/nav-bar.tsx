@@ -16,7 +16,7 @@ export function NavigationBar() {
             <NavigationMenu className="hidden sm:flex sm:sticky sm:top-0 min-w-full bg-black bg-opacity-20 backdrop-blur-lg container py-4 justify-between border-b border-border/40">
                 <Link href="/" passHref>
                     <Avatar className="cursor-pointer">
-                        <AvatarImage src="https://github.com/KeluhingBavui.png" alt="@KeluhingBavui" />
+                        <AvatarImage className='size-12' src="https://i.pinimg.com/564x/5d/ef/8c/5def8c3cff33b08ffcfd66c5fc725fc2.jpg" />
                         <AvatarFallback>VJ</AvatarFallback>
                     </Avatar>
                 </Link>

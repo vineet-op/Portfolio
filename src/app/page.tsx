@@ -15,9 +15,36 @@ import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import experiences from "@/lib/experiences.json";
 import me from "@/lib/img/me.png";
 import projects from "@/lib/projects.json";
-import { AtSign, Github, Linkedin } from "lucide-react";
+import { AtSign, Github, icons, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { FloatingDock } from "@/components/ui/FloatingDock";
+import { IconBrandGithub, IconMail } from '@tabler/icons-react';
+import { IconBrandX } from '@tabler/icons-react';
+import { IconBrandLinkedin } from '@tabler/icons-react';
+
+const items = [
+    {
+        title: "Github",
+        icon: <IconBrandGithub stroke={2} />,
+        href: "https://www.github.com/vineet-op",
+    },
+    {
+        title: "Twitter",
+        icon: <IconBrandX stroke={2} />, // Example icon
+        href: "https://x.com/Vineet2OP", // Example link
+    },
+    {
+        title: "LinkedIn",
+        icon: <IconBrandLinkedin stroke={2} />,
+        href: "https://www.linkedin.com/in/vineet-op",
+    },
+    {
+        title: "Email",
+        icon: <IconMail />,
+        href: "mailto:vineet290403@gmail.com",
+    },
+];
 
 export default function Home() {
     const name = [
@@ -28,7 +55,7 @@ export default function Home() {
     return (
         <div className="flex flex-col overflow-x-hidden">
             {/* Hero */}
-            <header className="flex flex-col sm:flex-row h-screen w-full justify-center items-center gap-4 mt-16">
+            <header className="flex flex-col sm:flex-row  h-screen w-full justify-center items-center gap-4 mt-16">
                 <div className="flex flex-col gap-2 w-full">
                     <TypewriterEffectSmooth words={name} />
                     <Reveal
@@ -44,11 +71,11 @@ export default function Home() {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.2 } }}
                     >
-                        <p className="leading-7 text-md">
-                            I plan, design, build, test and deploy software. With the help of coffee of course.
+                        <p className="leading-7 text-lg">
+                            I turn coffee into code, ideas into interfaces, and dreams into websites!
                         </p>
                     </Reveal>
-                    <div className="flex gap-4">
+                    <div className="flex mt-3 gap-4">
                         <TooltipProvider>
                             <Reveal
                                 initial={{ opacity: 0, y: 20 }}
@@ -103,7 +130,7 @@ export default function Home() {
                             </Reveal>
                         </TooltipProvider>
                         <a href="https://drive.google.com/file/d/1KZQO3V_7mZUU5Dvoipft6Knqo4rkhm1Q/view?usp=sharing">
-                            <Button className="ml-10 cursor-pointer bg-yellow-500">Resume</Button>
+                            <Button className="ml-10 cursor-pointer bg-yellow-500 text-white">Hire me!</Button>
                         </a>
                     </div>
                 </div>
@@ -112,14 +139,14 @@ export default function Home() {
                         src={me}
                         alt="Me"
                         fill
-                        style={{ objectFit: "contain" }}
+                        style={{ objectFit: "scale-down" }}
                         className="rounded-xl object-cover"
                     />
                 </div>
             </header>
             <Separator />
             {/* About */}
-            <section className="flex flex-col items-start justify-start gap-4 sm:py-32 py-16">
+            <section className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16">
                 <h2 id="about" className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
                     About Me
                 </h2>
@@ -127,14 +154,12 @@ export default function Home() {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 >
-                    <p className="leading-7">
-                        I build dynamic, user-centric web applications using modern technologies like React.Js, Next.js ,Node.js, and MongoDB. My expertise covers both front-end and back-end development, ensuring seamless integration and functionality. I deliver robust, scalable solutions tailored to each project's unique needs
+                    <p className="leading-8 text-lg flex  text-center">
+                        Hello! I’m Vineet, I'am 21 year old  passionate web developer from India
                         <br />
+                        With a background in Computer Science and a love for a knack for turning ideas into reality.
                         <br />
-                        Presently, my primary focus revolves around mastering the art of building high-quality and scalable software applications, continuously refining my skills in both frontend and backend development. As the saying goes, <em>"Once you go fullstack, you never go back"</em>.
-                        <br />
-                        <br />
-                        When I'm not coding, I usually play games, play football or binge-watch Animes.
+                        When I'm not coding, I usually play video games, football or binge-watch Animes.
                     </p>
                 </Reveal>
             </section>
@@ -415,35 +440,30 @@ export default function Home() {
                 </div>
             </section>
             <Separator />
+
             {/* Contact */}
             <section id="contact" className="flex flex-col items-center justify-center gap-8 sm:py-48 py-24">
                 <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
-                    Get In Touch
+                    Hey there ✨
                 </h2>
                 <Reveal
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
                 >
-                    <p className="leading-7">
-                        If you'd like to get in touch with me, feel free to reach out on LinkedIn or my email and I'll get back to you whenever I can.
+                    <p className="leading-7 text-2xl ">
+                        Thanks for dropping by my corner of the internet!
+                        feel free to hit me up on my socials
+                    </p>
+                    <p className="leading-7 font-mono mt-4 text-center text-lg">
+                        I promise to reply faster than your favorite pizza delivery 🍕
                     </p>
                 </Reveal>
-                <div className="flex">
+                <div className="flex p-8 border-white" >
                     <Reveal
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.1 } }}
                     >
-                        <Link href="mailto:vineet290403@gmail.com" target="_blank">
-                            <button className="inline-flex m-5 hover:bg-red h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                                Say Hi!
-                            </button>
-                        </Link>
-
-                        <Link href="https://linkedin.com/in/vineet-op" target="_blank">
-                            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                                LinkedIn
-                            </button>
-                        </Link>
+                        <FloatingDock items={items} />
                     </Reveal>
                 </div>
             </section>
