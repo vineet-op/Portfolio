@@ -1,20 +1,19 @@
 [
     {
-        "title": "INSIGHTS",
-        "description": "Developed a FullStack Blog application by integrating ReactJS, TailwindCSS and Appwrite for Backend as a service (BAAS) where Users can Login and Post, Edit, Read, Delete the Blogs",
+        "title": "TrueFeedback",
+        "description": "TrueFeedback is a platform where users can provide anonymous feedback to individuals or organizations without revealing their identity",
         "type": "Personal Projects",
-        "imageUrl": "/assets/img/blog.png",
-        "githubUrl": "https://github.com/vineet-op/Appwite-Blog",
-        "demoUrl": "https://insights7.netlify.app/",
+        "imageUrl": "/assets/img/true.png",
+        "githubUrl": "https://github.com/vineet-op/Truefeedback",
+        "demoUrl": "https://truefeedback.vercel.app/",
         "skills": [
-            "HTML",
+            "NEXT.JS",
+            "TYPESCRIPT",
             "TAILWIND",
-            "JAVASCRIPT",
-            "REACT.JS",
-            "APPWRITE",
-            "FORMIK",
-            "REDUX TOOLKIT",
-            "NETLIFY"
+            "MONGODB",
+            "SHADCN UI",
+            "REACT-HOOK-FORMS",
+            "ZOD"
         ]
     },
     {
@@ -31,6 +30,24 @@
             "SANITY.IO",
             "STRIPE",
             "VERCEL"
+        ]
+    },
+    {
+        "title": "INSIGHTS",
+        "description": "Developed a FullStack Blog application by integrating ReactJS, TailwindCSS and Appwrite for Backend as a service (BAAS) where Users can Login and Post, Edit, Read, Delete the Blogs",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/blog.png",
+        "githubUrl": "https://github.com/vineet-op/Appwite-Blog",
+        "demoUrl": "https://insights7.netlify.app/",
+        "skills": [
+            "HTML",
+            "TAILWIND",
+            "JAVASCRIPT",
+            "REACT.JS",
+            "APPWRITE",
+            "FORMIK",
+            "REDUX TOOLKIT",
+            "NETLIFY"
         ]
     },
     {
