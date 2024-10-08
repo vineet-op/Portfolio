@@ -88,7 +88,7 @@
         "type": "Personal Projects",
         "imageUrl": "/assets/img/spotify.png",
         "githubUrl": "https://github.com/vineet-op/SpotifyClone",
-        "demoUrl": "https://github.com/vineet-op/SpotifyClone",
+        "demoUrl": "https://vineet-op.github.io/SpotifyClone/",
         "skills": ["HTML", "CSS", "JAVASCRIPT"]
     }
 ]
