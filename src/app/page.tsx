@@ -129,8 +129,8 @@ export default function Home() {
                                 </Tooltip>
                             </Reveal>
                         </TooltipProvider>
-                        <a href="https://drive.google.com/file/d/1KZQO3V_7mZUU5Dvoipft6Knqo4rkhm1Q/view?usp=sharing">
-                            <Button className="ml-10 cursor-pointer bg-yellow-500 text-white">Hire me!</Button>
+                        <a href="https://drive.google.com/file/d/1dXBY6pEsYWODiIBJ486FfUhwy0oy9Hm-/view?usp=drive_link">
+                            <Button className="ml-10 cursor-pointer bg-yellow-500 font-extrabold text-black">Hire me!</Button>
                         </a>
                     </div>
                 </div>
