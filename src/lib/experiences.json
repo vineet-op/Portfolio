@@ -1,7 +1,7 @@
 [
     {
         "title": "Full-Stack Developer",
-        "company": "Numentry Technologies",
+        "company": "Numetry Technologies",
         "date": "February 2024 - June 2024",
         "description": "• Developed a REST API using Node.js, Express.js, and MongoDB for a user management system.\n• Designed a user interface using React.js and Shadcn UI library, increasing user engagement by 5%.\n• Integrated the state management library Recoil.js for efficient state management.\n• Explored ways to visualize projects using Git and GitHub workflow.",
         "skills": [

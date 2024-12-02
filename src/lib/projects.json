@@ -33,22 +33,31 @@
         ]
     },
     {
-        "title": "INSIGHTS",
-        "description": "Developed a FullStack Blog application by integrating ReactJS, TailwindCSS and Appwrite for Backend as a service (BAAS) where Users can Login and Post, Edit, Read, Delete the Blogs",
+        "title": "VIVID BLOGS",
+        "description": "Vivid Blogs is an Blog Application, were users can compose share their thoughts",
         "type": "Personal Projects",
         "imageUrl": "/assets/img/blog.png",
-        "githubUrl": "https://github.com/vineet-op/Appwite-Blog",
-        "demoUrl": "https://insights7.netlify.app/",
+        "githubUrl": "https://github.com/vineet-op/Vivid-Blogs",
+        "demoUrl": "https://vividblogs.vercel.app/",
         "skills": [
-            "HTML",
             "TAILWIND",
-            "JAVASCRIPT",
             "REACT.JS",
-            "APPWRITE",
-            "FORMIK",
-            "REDUX TOOLKIT",
-            "NETLIFY"
+            "TYPESCRIPT",
+            "JWT AUTH",
+            "FRAMER-MOTION",
+            "HONO",
+            "POSTGRES",
+            "PRISMA"
         ]
+    },
+    {
+        "title": "ZENTRY",
+        "description": "Recreated the award-winning Zentry Gaming Website with responsive design and smooth GSAP animations using React and Tailwind CSS.",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/zentry.png",
+        "githubUrl": "https://github.com/vineet-op/Awwards",
+        "demoUrl": "https://awwards-seven.vercel.app/",
+        "skills": ["JAVASCRIPT", "REACT.JS", "TAILWIND", "GSAP"]
     },
     {
         "title": "Biz-Directory",
@@ -58,20 +67,5 @@
         "githubUrl": "https://github.com/vineet-op/Business-Directory",
         "demoUrl": "",
         "skills": ["REACT NATIVE", "FIREBASE", "EXPO", "CLERK"]
-    },
-    {
-        "title": "Crypto-Arena",
-        "description": "Developed the Crypto WebApp where user can access all the information related to crypto-currecies and coins, and one can see the live Chart according to the time period",
-        "type": "Personal Projects",
-        "imageUrl": "/assets/img/crypto.png",
-        "githubUrl": "https://github.com/vineet-op/Crypto_Arena",
-        "demoUrl": "https://crypto-arenaa.vercel.app/",
-        "skills": [
-            "REACT.JS",
-            "CHAKRA UI",
-            "REDUX TOOLKIT",
-            "COINGEKO API",
-            "NETLIFY"
-        ]
     }
 ]
