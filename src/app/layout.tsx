@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GeistSans } from "geist/font/sans";
 
+
 export const metadata: Metadata = {
     title: 'Vineet Jadhav',
     description: 'I plan, design, build, test and deploy software',
