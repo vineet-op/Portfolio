@@ -131,7 +131,7 @@ export default function Home() {
                                 </Tooltip>
                             </Reveal>
                         </TooltipProvider>
-                        <a href="https://drive.google.com/file/d/1dXBY6pEsYWODiIBJ486FfUhwy0oy9Hm-/view?usp=drive_link">
+                        <a href="https://drive.google.com/file/d/1yiRFOz-Ie0FKyz7964QwKOb03lUK_QIT/view?usp=drive_link">
                             <Button className="ml-10 cursor-pointer bg-yellow-500 rounded-full font-extrabold text-black hover:animate-spin">Resume</Button>
                         </a>
                     </div>
