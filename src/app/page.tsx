@@ -57,8 +57,9 @@ export default function Home() {
     return (
         <div className="flex flex-col overflow-x-hidden">
             {/* Hero */}
-            <header className="flex flex-col sm:flex-row  h-screen w-full justify-center items-center gap-4 mt-16">
-                <div className="flex flex-col gap-2 w-full">
+
+            <header className="flex flex-col sm:flex-row  h-screen w-full justify-center items-center gap-4">
+                <div className="flex flex-col  gap-2 w-full">
                     <TypewriterEffectSmooth words={name} />
                     <Reveal
                         initial={{ opacity: 0, x: 50 }}
@@ -136,16 +137,18 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="flex relative w-full h-full rounded-xl ">
+                <div className="flex justify-center items-center w-full rounded-xl ">
                     <Image
+
                         src={mee}
                         alt="Me"
-                        fill
                         style={{ objectFit: "contain" }}
                         className="rounded-3xl object-cover"
                     />
                 </div>
             </header>
+
+
             <Separator />
             {/* About */}
             <section className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16">
@@ -445,18 +448,23 @@ export default function Home() {
 
             {/* Contact */}
             <section id="contact" className="flex flex-col items-center justify-center gap-8 sm:py-48 py-24">
-                <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
-                    Hey there ✨
-                </h2>
                 <Reveal
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
                 >
-                    <p className="leading-7 text-2xl ">
-                        Thanks for dropping by my corner of the internet!
-                        feel free to hit me up on my socials
+
+                    <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl text-white">
+                        Hey there 👋
+                    </h2>
+                </Reveal>
+                <Reveal
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+                >
+                    <p className="leading-7 text-xl text-white">
+                        If you have any questions, collaboration ideas, or just want to connect, feel free to reach out through my social channels.
                     </p>
-                    <p className="leading-7 font-mono mt-4 text-center text-lg">
+                    <p className="leading-7  mt-4 text-center text-base text-white">
                         I promise to reply faster than your favorite pizza delivery 🍕
                     </p>
                 </Reveal>

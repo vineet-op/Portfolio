@@ -64,7 +64,7 @@
         "title": "LogoSmith AI",
         "description": "An AI-powered logo generator that creates professional logos for your business",
         "type": "Personal Projects",
-        "imageUrl": "/assets/img/Project-2.png",
+        "imageUrl": "/assets/img/logo.png",
         "githubUrl": "https://github.com/vineet-op/LogoSmith",
         "demoUrl": "https://logosmith.vercel.app",
         "skills": [
@@ -79,7 +79,7 @@
         "title": "Podio",
         "description": "Transform your boring text documents into captivating audio files",
         "type": "Personal Projects",
-        "imageUrl": "/assets/img/Project-3.png",
+        "imageUrl": "/assets/img/podio.png",
         "githubUrl": "https://github.com/vineet-op/Podio",
         "demoUrl": "",
         "skills": [
@@ -94,7 +94,7 @@
         "title": "Job-Board",
         "description": "Supercharge your job hunt with our Job-Board. Connect with employers, submit resumes, and manage job applications.",
         "type": "Personal Projects",
-        "imageUrl": "/assets/img/Project-4.png",
+        "imageUrl": "/assets/img/jb.png",
         "githubUrl": "https://github.com/vineet-op/Job_Board",
         "demoUrl": "https://job-board-iota-seven.vercel.app/",
         "skills": ["Next.js", "Tailwind CSS", "ShadCN", "PostgreSQL", "Prisma"]
@@ -103,7 +103,7 @@
         "title": "TaskBuddy",
         "description": "A task management app that helps you organize your daily tasks and stay productive.",
         "type": "Personal Projects",
-        "imageUrl": "/assets/img/TaskBuddy.png",
+        "imageUrl": "/assets/img/task.png",
         "githubUrl": "https://github.com/vineet-op/TaskBuddy01",
         "demoUrl": "https://task-buddy-beta.vercel.app/",
         "skills": [
