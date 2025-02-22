@@ -11,7 +11,7 @@
             "TYPESCRIPT",
             "TAILWIND",
             "MONGODB",
-            "SHADCN UI",
+            "SHADCN",
             "REACT-HOOK-FORMS",
             "ZOD"
         ]
@@ -26,7 +26,7 @@
         "skills": [
             "NEXT.JS",
             "TYPESCRIPT",
-            "SHADCN UI",
+            "SHADCN",
             "SANITY.IO",
             "STRIPE",
             "VERCEL"
@@ -59,13 +59,60 @@
         "demoUrl": "https://awwards-seven.vercel.app/",
         "skills": ["JAVASCRIPT", "REACT.JS", "TAILWIND", "GSAP"]
     },
+
     {
-        "title": "Biz-Directory",
-        "description": "Developed a Business Directory app with React Native and Expo, allowing users to browse business categories and add their own listings.",
+        "title": "LogoSmith AI",
+        "description": "An AI-powered logo generator that creates professional logos for your business",
         "type": "Personal Projects",
-        "imageUrl": "/assets/img/Login.png",
-        "githubUrl": "https://github.com/vineet-op/Business-Directory",
+        "imageUrl": "/assets/img/Project-2.png",
+        "githubUrl": "https://github.com/vineet-op/LogoSmith",
+        "demoUrl": "https://logosmith.vercel.app",
+        "skills": [
+            "Next.js",
+            "Gemini",
+            "Hugging Face",
+            "Tailwind CSS",
+            "ShadCN"
+        ]
+    },
+    {
+        "title": "Podio",
+        "description": "Transform your boring text documents into captivating audio files",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/Project-3.png",
+        "githubUrl": "https://github.com/vineet-op/Podio",
         "demoUrl": "",
-        "skills": ["REACT NATIVE", "FIREBASE", "EXPO", "CLERK"]
+        "skills": [
+            "Next.js",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "Google Text-to-Speech API"
+        ]
+    },
+    {
+        "title": "Job-Board",
+        "description": "Supercharge your job hunt with our Job-Board. Connect with employers, submit resumes, and manage job applications.",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/Project-4.png",
+        "githubUrl": "https://github.com/vineet-op/Job_Board",
+        "demoUrl": "https://job-board-iota-seven.vercel.app/",
+        "skills": ["Next.js", "Tailwind CSS", "ShadCN", "PostgreSQL", "Prisma"]
+    },
+    {
+        "title": "TaskBuddy",
+        "description": "A task management app that helps you organize your daily tasks and stay productive.",
+        "type": "Personal Projects",
+        "imageUrl": "/assets/img/TaskBuddy.png",
+        "githubUrl": "https://github.com/vineet-op/TaskBuddy01",
+        "demoUrl": "https://task-buddy-beta.vercel.app/",
+        "skills": [
+            "REACT.JS",
+            "Tailwind CSS",
+            "TYPESCRIPT",
+            "FIREBASE",
+            "ZUSTAND",
+            "ShadCN"
+        ]
     }
 ]
