@@ -132,8 +132,8 @@ export default function Home() {
                                 </Tooltip>
                             </Reveal>
                         </TooltipProvider>
-                        <a href="https://drive.google.com/file/d/1yiRFOz-Ie0FKyz7964QwKOb03lUK_QIT/view?usp=drive_link">
-                            <Button className="ml-10 cursor-pointer bg-yellow-500 rounded-full font-extrabold text-black hover:animate-spin">Resume</Button>
+                        <a href="https://drive.google.com/file/d/1_3oL0Xm3F4U4a33rq5lb7VQTSq0Ph43Z/view?usp=drive_link">
+                            <Button className="ml-10 cursor-pointer bg-yellow-500 rounded-full font-extrabold text-black">Resume</Button>
                         </a>
                     </div>
                 </div>
@@ -461,19 +461,18 @@ export default function Home() {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
                 >
-                    <p className="leading-7 text-xl text-white">
+                    <p className="leading-7 text-xl text-center text-white text-clip ">
                         If you have any questions, collaboration ideas, or just want to connect, feel free to reach out through my social channels.
                     </p>
-                    <p className="leading-7  mt-4 text-center text-base text-white">
-                        I promise to reply faster than your favorite pizza delivery 🍕
-                    </p>
                 </Reveal>
-                <div className="flex p-8 border-white" >
+                <div className="flex py-8 border-white" >
                     <Reveal
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.1 } }}
                     >
-                        <FloatingDock items={items} />
+                        <FloatingDock
+                            desktopClassName="text-yellow-500 hover:scale-110 transition delay-150 duration-300 ease-in-out"
+                            mobileClassName="text-yellow-500 hover:scale-110 transition delay-150 duration-300 ease-in-out hover:-translate-y-1" items={items} />
                     </Reveal>
                 </div>
             </section>
