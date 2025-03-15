@@ -14,7 +14,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import experiences from "@/lib/experiences.json";
 
-import mee from "@/lib/img/mee.jpg";
+import me2 from "@/lib/img/me2.jpg";
 
 import projects from "@/lib/projects.json";
 import { AtSign, Github, icons, Linkedin } from "lucide-react";
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="flex justify-center items-center w-full rounded-xl ">
                     <Image
 
-                        src={mee}
+                        src={me2}
                         alt="Me"
                         style={{ objectFit: "contain" }}
                         className="rounded-3xl object-cover"
