@@ -32,7 +32,7 @@ export default function RootLayout({
                     </main>
                     <footer className="container mx-auto py-4">
                         <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
-                            © Designed & Built by Vineet Jadhav · 2024
+                            © Designed & Built by Vineet Jadhav · 2025
                         </p>
                     </footer>
                 </ThemeProvider>

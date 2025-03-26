@@ -1,25 +1,18 @@
+"use client"
+
 import { ExperienceCard } from "@/components/experience-card";
 import { ProjectCard3d } from "@/components/project-card-3d";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { motion } from 'framer-motion';
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip";
+
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import experiences from "@/lib/experiences.json";
 
-import me2 from "@/lib/img/me2.jpg";
+import mee3 from "@/lib/img/mee3.jpeg";
 
 import projects from "@/lib/projects.json";
-import { AtSign, Github, icons, Linkedin } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { FloatingDock } from "@/components/ui/FloatingDock";
 import { IconBrandGithub, IconMail } from '@tabler/icons-react';
 import { IconBrandX } from '@tabler/icons-react';
@@ -33,8 +26,8 @@ const items = [
     },
     {
         title: "Twitter",
-        icon: <IconBrandX stroke={2} />, // Example icon
-        href: "https://x.com/Vineet2OP", // Example link
+        icon: <IconBrandX stroke={2} />,
+        href: "https://x.com/Vineet2OP",
     },
     {
         title: "LinkedIn",
@@ -49,24 +42,28 @@ const items = [
 ];
 
 export default function Home() {
-    const name = [
-        { text: "Vineet" },
-        { text: "Jadhav" },
-    ]
+
+
 
     return (
         <div className="flex flex-col overflow-x-hidden">
             {/* Hero */}
-
-            <header className="flex flex-col sm:flex-row  h-screen w-full justify-center items-center gap-4">
-                <div className="flex flex-col  gap-2 w-full">
-                    <TypewriterEffectSmooth words={name} />
+            <header className="flex flex-col h-screen pt-6 w-full items-center  gap-7">
+                <Reveal
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
+                >
+                    <div className="p-2">
+                        <Image src={mee3} alt="profile" className="size-96 rounded-3xl transform transition duration-300 hover:scale-105 hover:border-green-500 border-2 " />
+                    </div>
+                </Reveal>
+                <div className="flex flex-col justify-center items-center gap-2 w-full">
                     <Reveal
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                     >
-                        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                            <span className="text-3xl font-bold text-yellow-500"> Full Stack </span> Web Developer
+                        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight bg-clip-text text-center text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+                            <span className="text-2xl lg:text-3xl font-semibold text-green-500">  Hello I'am Vineet </span>
                         </h3>
                     </Reveal>
 
@@ -74,82 +71,28 @@ export default function Home() {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.2 } }}
                     >
-                        <p className="leading-7 text-lg">
+                        <p className="leading-7 pt-2 text-lg font-medium text-center">
                             I turn coffee into code, ideas into interfaces, and dreams into websites!
                         </p>
                     </Reveal>
-                    <div className="flex mt-3 gap-4">
-                        <TooltipProvider>
-                            <Reveal
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
-                            >
-                                <Tooltip>
-                                    <TooltipTrigger asChild>
-                                        <Link href="https://www.linkedin.com/in/vineet-op/" target="_blank">
-                                            <Button variant="secondary" size="icon">
-                                                <Linkedin />
-                                            </Button>
-                                        </Link>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>LinkedIn</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </Reveal>
-                            <Reveal
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.2 } }}
-                            >
-                                <Tooltip>
-                                    <TooltipTrigger asChild>
-                                        <Link href="https://github.com/vineet-op" target="_blank">
-                                            <Button variant="secondary" size="icon">
-                                                <Github />
-                                            </Button>
-                                        </Link>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Github</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </Reveal>
-                            <Reveal
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.4 } }}
-                            >
-                                <Tooltip>
-                                    <TooltipTrigger asChild>
-                                        <Link href="mailto:vineet290403@gmail.com" target="_blank">
-                                            <Button variant="secondary" size="icon">
-                                                <AtSign />
-                                            </Button>
-                                        </Link>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Email</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </Reveal>
-                        </TooltipProvider>
-                        <a href="https://drive.google.com/file/d/1_3oL0Xm3F4U4a33rq5lb7VQTSq0Ph43Z/view?usp=drive_link">
-                            <Button className="ml-10 cursor-pointer bg-yellow-500 rounded-full font-extrabold text-black">Resume</Button>
-                        </a>
-                    </div>
-                </div>
-                <div className="flex justify-center items-center w-full rounded-xl ">
-                    <Image
 
-                        src={me2}
-                        alt="Me"
-                        style={{ objectFit: "contain" }}
-                        className="rounded-3xl object-cover"
-                    />
+                    <Reveal
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.2 } }}
+                    >
+
+                        <Button className="mt-5 w-48 rounded-3xl text-black text-base transform transition duration-300 hover:scale-x-105 hover:border-green-500 border-2" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                            Get in Touch
+                        </Button>
+                    </Reveal>
+
                 </div>
             </header>
 
-
             <Separator />
+
+
+
             {/* About */}
             <section className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16">
                 <h2 id="about" className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
@@ -159,49 +102,19 @@ export default function Home() {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 >
-                    <p className="leading-8 text-lg flex  text-center">
-                        Hello! I’m Vineet, I'am 21 year old  passionate web developer from India
-                        <br />
+                    <p className="leading-8 text-base flex  text-wrap text-center">
+                        I'am 21 year old developer from India
+
                         With a background in Computer Science and a love for a knack for turning ideas into reality.
-                        <br />
+
                         When I'm not coding, I usually play video games, football or binge-watch Animes.
                     </p>
                 </Reveal>
             </section>
             <Separator />
-            {/* Experience */}
-            <section id="experiences" className="flex flex-col items-start justify-start gap-4 sm:py-32 sm:mx-24 md:mx-32 lg:mx-64 xl:mx-96 py-16">
-                <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl text-center w-full">
-                    Where I've Worked
-                </h2>
-                <div className="flex flex-col gap-4 md:hidden">
-                    {experiences.map((experience) => (
-                        <ExperienceCard
-                            key={experience.title}
-                            title={experience.title}
-                            company={experience.company}
-                            date={experience.date}
-                            description={experience.description}
-                            skills={experience.skills}
-                        />
-                    ))}
-                </div>
-                <TracingBeam className="px-6 hidden md:flex md:flex-col">
-                    <div className="flex flex-col gap-4">
-                        {experiences.map((experience) => (
-                            <ExperienceCard
-                                key={experience.title}
-                                title={experience.title}
-                                company={experience.company}
-                                date={experience.date}
-                                description={experience.description}
-                                skills={experience.skills}
-                            />
-                        ))}
-                    </div>
-                </TracingBeam>
-            </section>
-            <Separator />
+
+
+
             {/* Projects */}
             <section id="projects" className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16">
                 <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
@@ -228,6 +141,10 @@ export default function Home() {
                 </div>
             </section>
             <Separator />
+
+
+
+
             {/* Skills */}
             <section id="skills" className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16">
                 <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
@@ -446,6 +363,42 @@ export default function Home() {
             </section>
             <Separator />
 
+
+            {/* Experience */}
+            <section id="experiences" className="flex flex-col items-start justify-start gap-4 sm:py-32 sm:mx-24 md:mx-32 lg:mx-64 xl:mx-96 py-16">
+                <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl text-center w-full">
+                    Where I've Worked
+                </h2>
+                <div className="flex flex-col gap-4 md:hidden">
+                    {experiences.map((experience) => (
+                        <ExperienceCard
+                            key={experience.title}
+                            title={experience.title}
+                            company={experience.company}
+                            date={experience.date}
+                            description={experience.description}
+                            skills={experience.skills}
+                        />
+                    ))}
+                </div>
+                <TracingBeam className="px-6 hidden md:flex md:flex-col">
+                    <div className="flex flex-col gap-4">
+                        {experiences.map((experience) => (
+                            <ExperienceCard
+                                key={experience.title}
+                                title={experience.title}
+                                company={experience.company}
+                                date={experience.date}
+                                description={experience.description}
+                                skills={experience.skills}
+                            />
+                        ))}
+                    </div>
+                </TracingBeam>
+            </section>
+            <Separator />
+
+
             {/* Contact */}
             <section id="contact" className="flex flex-col items-center justify-center gap-8 sm:py-48 py-24">
                 <Reveal
@@ -461,7 +414,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
                 >
-                    <p className="leading-7 text-xl text-center text-white text-clip ">
+                    <p className="leading-7 text-lg text-center text-white text-clip ">
                         If you have any questions, collaboration ideas, or just want to connect, feel free to reach out through my social channels.
                     </p>
                 </Reveal>
@@ -471,8 +424,8 @@ export default function Home() {
                         whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.1 } }}
                     >
                         <FloatingDock
-                            desktopClassName="text-yellow-500 hover:scale-110 transition delay-150 duration-300 ease-in-out"
-                            mobileClassName="text-yellow-500 hover:scale-110 transition delay-150 duration-300 ease-in-out hover:-translate-y-1" items={items} />
+                            desktopClassName="text-green-500 hover:scale-110 transition delay-150 duration-300 ease-in-out"
+                            mobileClassName="text-green-500 hover:scale-110 transition delay-150 duration-300 ease-in-out hover:-translate-y-1" items={items} />
                     </Reveal>
                 </div>
             </section>
